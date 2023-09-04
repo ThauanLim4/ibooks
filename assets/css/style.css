@@ -1,0 +1,40 @@
+:root {
+    --branco: #ffffff;
+    --cor-background: #EBECEE;
+    --cor-primaria: #016A70;
+    --cor-secundaria: #FFFFDD;
+    --cor-terciaria: #D2DE32;
+    --cor-quartenaria: #A2C579;
+}
+body {
+    background-color: var(--cor-background);
+    font-family: 'Poppins', sans serif;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.15em 1.12em;
+}
+.container {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+.menu_hamburger {
+    width: 24px;
+    height: 24px;
+    background-image: url(../imagens/Menu.svg);
+    display: inline-block;
+}
+.section-one {
+    background: linear-gradient(to right, #016A70, #096c71);
+    height: 24em;
+}
+.titulo_inicial {
+    color: var(--branco);
+    font-size: 2.25em;
+    text-align: center;
+    font-weight: 700;
+}
