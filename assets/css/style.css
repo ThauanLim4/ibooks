@@ -9,7 +9,10 @@
 body {
     background-color: var(--cor-background);
     font-family: 'Poppins', sans serif;
+    overflow: hidden;
 }
+
+/* ------------------------------------------------------------parte inicial */
 
 .cabecalho {
     background-color: var(--branco);
@@ -30,11 +33,93 @@ body {
 }
 .section-one {
     background: linear-gradient(to right, #016A70, #096c71);
-    height: 24em;
+    height: 13.43em;
+    padding-bottom: 2.02em;
 }
 .titulo_inicial {
     color: var(--branco);
     font-size: 2.25em;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.paragrafo_inicial {
+    color: var(--branco);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+}
+.container_inicial {
+    padding-top: 2em;
+}
+.container_inicial_copy1 {
+    display: flex;
+    justify-content: center;
+    gap: 0.85em;
+    border: 0.06em solid var(--branco);
+    width: 20em;
+    margin: 1.5em auto;
+    padding: 0.62em 1.5em;
+    border-radius: 1.5em;
+}
+.paragrafo_barra_pesquisa {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 0.85em;
+}
+
+/* ---------------------------------------------------------------corpo */
+
+.titulo_lancamentos {
+    font-size: 1.125em;
+    color: #096c71;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+}
+.section_lancamentos {
+    background-color: var(--branco);
+    height: 2em;
+    padding-top: 1em;
+}
+.section_main {
+    height: 40.937em;
+}
+.ellipse {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0.5em;
+    margin: 0.75em auto 1em auto;
+    justify-content: center;
+}
+.section_livos {
+    box-sizing: content-box;
+    display: flex;
+    gap: 1.25em;
+    align-self: center;
+    align-items: center;
+    margin: auto 1.5em;
+}
+.section_livros_one {
+    background: url(../imagens/ApacheKafka.svg) lightgray 50% / cover no-repeat;
+    width: 11.1875em;
+    height: 15.5685em;
+    display: inline-block;
+    margin-left: -100px;
+}
+.section_livros_two {
+    background: url(../imagens/Liderança.svg);
+    width: 11.1875em;
+    height: 15.5685em;
+    display: inline-block;
+    margin: auto 1.25em;
+}
+.section_livros_three {
+    background: url(../imagens/Javascript.svg);
+    width: 11.1875em;
+    height: 15.5685em;
+    display: inline-block;   
+    margin-right: -200px;
+
 }
