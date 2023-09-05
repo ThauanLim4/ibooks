@@ -2,14 +2,15 @@
     --branco: #ffffff;
     --cor-background: #EBECEE;
     --cor-primaria: #016A70;
-    --cor-secundaria: #FFFFDD;
+    --cor-secundaria: #A2C579;
     --cor-terciaria: #D2DE32;
-    --cor-quartenaria: #A2C579;
+    --cor-quartenaria: #FFFFDD;
 }
 body {
     background-color: var(--cor-background);
     font-family: 'Poppins', sans serif;
-    overflow: hidden;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 /* ------------------------------------------------------------parte inicial */
@@ -19,6 +20,7 @@ body {
     display: flex;
     justify-content: space-between; 
     padding: 1.15em 1.12em;
+    position: relative;
 }
 .container {
     display: flex;
@@ -49,6 +51,14 @@ body {
     font-size: 1em;
     font-weight: 500;
 }
+.lista_menu {
+    display: none;
+    position: absolute;
+    top:100%
+}
+.container_botao:checked~.lista_menu {
+    display: block;
+}
 .container_inicial {
     padding-top: 2em;
 }
@@ -69,6 +79,10 @@ body {
 }
 
 /* ---------------------------------------------------------------corpo */
+
+.section_principal {
+    height: 100vh;
+}
 
 .titulo_lancamentos {
     font-size: 1.125em;
@@ -122,4 +136,64 @@ body {
     display: inline-block;   
     margin-right: -200px;
 
+}
+.div_angular11 {
+    width: 23.75em;
+    height: 18.4375em;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    margin: 1.25em 1.5em;
+    padding: 1.5em;
+    border-radius: 0.625em;
+}
+.background_angular {
+    background: url(../imagens/Angular.svg) lightgray 50% / cover no-repeat;
+    width: 11.75em;
+    height: 11.75em;
+    display: inline-block;
+    align-self: flex-end;
+    position: absolute;
+}
+.titulo_interesse_angular {
+    color: var(--cor-secundaria);
+    font-size: 1em;
+    font-weight: 700;
+    width: 11.1875em;
+    height: 3em;
+}
+.titulo_angular {
+    color: var(--cor-primaria);
+    width: 8.9375em;
+    font-size: 1.25em;
+    font-weight: 700;
+    height: 3.375em;
+}
+.paragrafo_angular {
+    width: 9.25em;
+    height: 4.0625em;
+}
+.section_angular {
+    margin-top: 2em;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.625em;
+    padding: 0.5em;
+}
+.icone_section_angular {
+    display: inline-block;
+}
+.botao_saibamais_angular {
+    display: flex;
+    justify-content: end;
+    width: 10.0625em;
+    align-self: flex-end;
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
 }
