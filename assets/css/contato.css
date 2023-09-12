@@ -1,0 +1,70 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.titulo_contato {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: var(--Teste, linear-gradient(98deg, #002F52 35.49%, #326589 165.37%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.paragrafo_contato {
+    font-size: 1em;
+    font-weight: 300;
+    background: var(--Teste, linear-gradient(98deg, #002F52 35.49%, #326589 165.37%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+.cad_email {
+    padding: 0.625em 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+    border-radius: 1.5em;   
+    width: 90%;
+    margin: auto;
+    outline: none;
+    border: 1px solid var(--Teste, #002F52);
+    background: var(--Teste, linear-gradient(98deg, #002F52 35.49%, #326589 165.37%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cad_email::placeholder {
+    background: url(../imagens/Email.svg) no-repeat;
+    text-align: center;
+}
+
+/* a */
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cad_email {
+        width: 40%;
+    }
+    .titulo_contato {
+        text-align: center;
+    }
+    .paragrafo_contato {
+        width: 50%;
+        margin-left: 5em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3em 30vw;
+    }
+}

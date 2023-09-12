@@ -1,0 +1,132 @@
+.titulo_carrossel {
+    font-size: 1.125em;
+    color: #096c71;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    background-color: var(--branco);
+    padding: 1.25em 0 0.5em 0;
+}
+.swiper {
+    margin-top: 3.75em;
+    background-color: var(--cor-background);
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination {
+    display: block;
+}
+.swiper-scrollbar {
+    margin: 0;
+}
+
+.card {
+    background-color: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.625em;
+    margin: 1.5em 1em;
+    padding: 1em;
+}
+
+.card_descricao {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.titulo_h3 {
+    color: var(--cor-primaria);
+    font-size: 1em;
+    font-weight: 700;
+    width: 11.1875em;
+    margin: 0.5em 0;
+}
+.titulo_h2 {
+    color: var(--cor-secundaria);
+    font-size: 1.25em;
+    margin: 0.5em 0;
+    font-weight: 700;
+}
+.paragrafo {
+    margin: 0.5em 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.itens {
+    display: flex;
+    gap: 0.5em;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+}
+.saibamais {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1em 2.2em;
+    margin: 1em 0;
+    color: var(--branco);
+    background-color: #096c71;
+    text-align: center;
+}
+
+/*--------------------------- telas acima de 1023px */
+
+@media screen and (min-width: 1024px) {
+    .titulo_carrossel {
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: normal;
+    }
+    .swiper {
+        width: 50%;
+    }
+    .card {
+        margin: 3em auto;
+        width: 50%;
+    }  
+}
+
+/*--------------------------- telas acima de 1728px */
+
+@media screen and (min-width: 1728px) {
+    .carrossel_container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        justify-content: center;
+        gap: 2.68em;
+    }
+    .swiper {
+        width: 60%;
+        height: 18em;
+    }
+    .card {
+        padding: 2;
+        width: 60%;
+        height: 18em;
+    }
+    .titulo_h3 {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .titulo_h2 {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .paragrafo {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
